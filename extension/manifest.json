@@ -1,0 +1,18 @@
+{
+  "name": "Google Meet - Auto Leave",
+  "version": "1.0",
+  "description": "A simple auto leave for google meet calls",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "assets/icons/google-meet-icon.png"
+  },
+  "permissions": ["activeTab", "tabs"],
+  "icons": {
+    "128": "assets/icons/google-meet-icon-2.png"
+  }
+}
