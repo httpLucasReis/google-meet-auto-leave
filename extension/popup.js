@@ -5,7 +5,7 @@ chrome.tabs.executeScript(null, {
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.onMeet) {
     if (request.running) {
-      console.alert("Google Meet Auto Leave is running now");
+      alert("Google Meet Auto Leave is running now");
     } else {
       const limitOfParticipantsToExit = window.prompt(`
           Total of Participants: ${request.numberOfParticipants}\n
